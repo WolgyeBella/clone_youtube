@@ -5,8 +5,6 @@ import { useQuery } from "@tanstack/react-query";
 export default function ChannelInfo({ id, name }) {
   const { youtube } = useYoutubeApi();
   const {
-    error,
-    isLoading,
     data: url,
   } = useQuery({
     queryKey: ["channel", id],
